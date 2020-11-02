@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" href="icon-font.css">
+    
+    <link href="css/main.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<nav class="nav-bar">
+        <div class="header_panel">
+            <a href="index.html" class="logo"></a>
+            <form action="" method="get" class="search">
+                <input autocomplete="off" name="q" size="27" placeholder="Search" type="text" />
+                <input name="search" type="submit" />
+            </form>
+            <ul class="nav">
+                <li><a href="#add_form" id="login_pop">Add +</a></li>
+                <li>
+                    <a href="#">Pages<span></span></a>
+                    <ul>
+                        <li><a href="dashboard.html">Dashboard</a></li>
+                        <li><a href="aboutus.html">About</a></li>
+                        <li class="div"><a href="#">Terms of Service</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Profile<span></span></a>
+                    <ul>
+                        <li><a href="#">Invite Friends</a></li>
+                        <li><a href="#">Pins</a></li>
+                        <li><a href="#">Likes</a></li>
+                        <li class="div"><a href="#">Settings</a></li>
+                        <li><a href="login.html">Logout</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+
+        </div>
+        <a href="#x" class="overlay" id="add_form"></a>
+        <div class="popup">
+            <div class="header">
+                <a class="close" href="#close">x</a>
+                <h2>Upload a Pin</h2>
+            </div>
+            <form>
+                <input type="file" name="image_file" id="image_file" onchange="" />
+            </form>
+        </div>
+    </nav>
+    <section class="bg">
+        <img src="images/pic6.jpg" alt="Background img" class="bg__img">
+    </section>
+    <section class="mainpage" id="mainpage">
+        <header id="header" class="header">
+            
+            <div class="header__heading-div">
+                <h1 class="header__pri-heading">
+                    <span class="header__main-heading">A humble abode for the Artists</span>
+                    <span class="header__lineh">around the globe</span>
+                    <span class="header__line-heading">Art Sharks</span>
+                </h1>
+            <div class="header__button-div">
+                <a href="index.html" class="btn btn--white btn--animated">Discover</a>
+            </div>
+            </div>
+        </header>
+    </section>
+    <section class="features" id="features">
+        <div class="features__head">
+            <h1> Features </h1>
+            <p class="text-center"> Here are some amazing features </p>
+        </div>
+        <div class="features__row">
+            <div class="col-1-of-4">
+                <div class="features-box">
+                    <h3 class="ter-heading u-margin-bottom-small">Discover Images</h3>
+                    <p class="features-box__text">Search and scroll through the already uploaded images by various artists on the site.</p>
+                </div>
+            </div>
+            <div class="col-1-of-4">
+                <div class="features-box">
+                    <h3 class="ter-heading u-margin-bottom-small">Share your art</h3>
+                    <p class="features-box__text">Make an account and share your own art and flaunt it to others.</p>
+                </div>
+            </div>
+            <div class="col-1-of-4">
+                <div class="features-box">
+                    <h3 class="ter-heading u-margin-bottom-small">Feedbacks</h3>
+                    <p class="features-box__text">Comment and like the images, give and get feedbacks on the uploaded images respectively.</p>
+                </div>
+            </div>
+            <div class="col-1-of-4">
+                <div class="features-box">
+                    <h3 class="ter-heading u-margin-bottom-small">Pin your favourits</h3>
+                    <p class="features-box__text">Pin the images you like, which will further reflect in the pinned corner</p>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+</body>
+</html>
