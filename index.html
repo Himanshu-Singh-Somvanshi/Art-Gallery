@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en" >
+    <head>
+        <meta charset="utf-8" />
+        <meta name="author" content="Script Tutorials" />
+        <title>Art Gallery</title>
+
+        <!-- add styles -->
+        <link href="css/main.css" rel="stylesheet" type="text/css" />
+
+        <!-- add scripts -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/jquery.masonry.min.js"></script>
+        <script src="js/script.js"></script>
+    </head>
+    <body>
+        <div class="header_panel">
+            <a href="index.html" class="logo"></a>
+            <form action="" method="get" class="search">
+                <input autocomplete="off" name="q" size="27" placeholder="Search" type="text" />
+                <input name="search" type="submit" />
+            </form>
+            <ul class="nav">
+                <li><a href="#add_form" id="login_pop">Add +</a></li>
+                <li>
+                    <a href="#">Pages<span></span></a>
+                    <ul>
+                        <li><a href="dashboard.html">Dashboard</a></li>
+                        <li><a href="aboutus.html">About</a></li>
+                        <li class="div"><a href="#">Terms of Service</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Profile<span></span></a>
+                    <ul>
+                        <li><a href="#">Invite Friends</a></li>
+                        <li><a href="#">Pins</a></li>
+                        <li><a href="#">Likes</a></li>
+                        <li class="div"><a href="#">Settings</a></li>
+                        <li><a href="login.html">Logout</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+
+        </div>
+        <a href="#x" class="overlay" id="add_form"></a>
+        <div class="popup">
+            <div class="header">
+                <a class="close" href="#close">x</a>
+                <h2>Upload a Pin</h2>
+            </div>
+            <form>
+                <input type="file" name="image_file" id="image_file" onchange="" />
+            </form>
+        </div>
+
+        <div class="main_container">
+
+            <div class="pin">
+                <div class="holder">
+                    <div class="actions" pin_id="1">
+                        <a href="#" class="button">Pin</a>
+                        <a href="#" class="button">Like</a>
+                        <a href="#" class="button disabled comment_tr">Comment</a>
+                    </div>
+                    <a class="image ajax" href="#" title="Sea Queen" pin_id="1" >
+                        <img alt="Photo number 1" src="photos/pic1.jpg">
+                    </a>
+                </div>
+                <p class="desc">Heart of Ocean</p>
+                <p class="info">
+                    <span>167 likes</span>
+                    <span>19 repins</span>
+                </p>
+                <form class="comment" method="post" action="">
+                    <input type="hidden" name="id" value="1" />
+                    <textarea placeholder="Add a comment..." maxlength="1000"></textarea>
+                    <button type="button" class="button">Comment</button>
+                </form>
+            </div>
+
+            <div class="pin">
+                <div class="holder">
+                    <div class="actions" pin_id="2">
+                        <a href="#" class="button">Pin</a>
+                        <a href="#" class="button">Like</a>
+                        <a href="#" class="button comment_tr">Comment</a>
+                    </div>
+                    <a class="image ajax" href="#" title="Vampire Duchess">
+                        <img alt="Photo number 2" src="photos/pic2.jpg">
+                    </a>
+                </div>
+                <p class="desc">Blood Queen</p>
+                <p class="info">
+                    <span>98 likes</span>
+                    <span>26 repins</span>
+                </p>
+                <form class="comment" method="post" action="" style="display: none">
+                    <input type="hidden" name="id" value="2" />
+                    <textarea placeholder="Add a comment..." maxlength="1000"></textarea>
+                    <button type="button" class="button">Comment</button>
+                </form>
+            </div>
+
+            <div class="pin">
+                <div class="holder">
+                    <div class="actions" pin_id="3">
+                        <a href="#" class="button">Pin</a>
+                        <a href="#" class="button">Like</a>
+                        <a href="#" class="button comment_tr">Comment</a>
+                    </div>
+                    <a class="image ajax" href="#" title="Cale Henituse and Co.">
+                        <img alt="Photo number 3" src="photos/pic3.jpg">
+                    </a>
+                </div>
+                <p class="desc">Trash of The Count Family</p>
+                <p class="info">
+                    <span>139 likes</span>
+                    <span>13 repins</span>
+                </p>
+                <form class="comment" method="post" action="" style="display: none">
+                    <input type="hidden" name="id" value="3" />
+                    <textarea placeholder="Add a comment..." maxlength="1000"></textarea>
+                    <button type="button" class="button">Comment</button>
+                </form>
+            </div>
+
+            <div class="pin">
+                <div class="holder">
+                    <div class="actions" pin_id="4">
+                        <a href="#" class="button">Repin</a>
+                        <a href="#" class="button">Like</a>
+                        <a href="#" class="button comment_tr">Comment</a>
+                    </div>
+                    <a class="image ajax" href="#" title="Moon Elf">
+                        <img alt="Photo number 4" src="photos/pic4.jpg">
+                    </a>
+                </div>
+                <p class="desc">Argent Moonwing</p>
+                <p class="info">
+                    <span>144 likes</span>
+                    <span>64 repins</span>
+                </p>
+                <form class="comment" method="post" action="" style="display: none">
+                    <input type="hidden" name="id" value="4" />
+                    <textarea placeholder="Add a comment..." maxlength="1000"></textarea>
+                    <button type="button" class="button">Comment</button>
+                </form>
+            </div>
+            <div class="pin">
+                <div class="holder">
+                    <div class="actions" pin_id="5">
+                        <a href="#" class="button">Pin</a>
+                        <a href="#" class="button">Like</a>
+                        <a href="#" class="button comment_tr">Comment</a>
+                    </div>
+                    <a class="image ajax" href="#" title="Peach blossoms">
+                        <img alt="Photo number 4" src="photos/pic5.jpg">
+                    </a>
+                </div>
+                <p class="desc">Thousand miles peach walk</p>
+                <p class="info">
+                    <span>85 likes</span>
+                    <span>15 repins</span>
+                </p>
+                <form class="comment" method="post" action="" style="display: none">
+                    <input type="hidden" name="id" value="4" />
+                    <textarea placeholder="Add a comment..." maxlength="1000"></textarea>
+                    <button type="button" class="button">Comment</button>
+                </form>
+            </div>
+            <div class="pin">
+                <div class="holder">
+                    <div class="actions" pin_id="6">
+                        <a href="#" class="button">Pin</a>
+                        <a href="#" class="button">Like</a>
+                        <a href="#" class="button comment_tr">Comment</a>
+                    </div>
+                    <a class="image ajax" href="#" title="Fleon Buterfly">
+                        <img alt="Photo number 4" src="photos/pic6.jpg">
+                    </a>
+                </div>
+                <p class="desc">Mariposa</p>
+                <p class="info">
+                    <span>65 likes</span>
+                    <span>5 repins</span>
+                </p>
+                <form class="comment" method="post" action="" style="display: none">
+                    <input type="hidden" name="id" value="4" />
+                    <textarea placeholder="Add a comment..." maxlength="1000"></textarea>
+                    <button type="button" class="button">Comment</button>
+                </form>
+            </div>
+            <div class="pin">
+                <div class="holder">
+                    <div class="actions" pin_id="7">
+                        <a href="#" class="button">Pin</a>
+                        <a href="#" class="button">Like</a>
+                        <a href="#" class="button comment_tr">Comment</a>
+                    </div>
+                    <a class="image ajax" href="#" title="Mythic beast">
+                        <img alt="Photo number 4" src="photos/pic7.jpg">
+                    </a>
+                </div>
+                <p class="desc">Feng Xiao Zhu</p>
+                <p class="info">
+                    <span>56 likes</span>
+                    <span>7 repins</span>
+                </p>
+                <form class="comment" method="post" action="" style="display: none">
+                    <input type="hidden" name="id" value="4" />
+                    <textarea placeholder="Add a comment..." maxlength="1000"></textarea>
+                    <button type="button" class="button">Comment</button>
+                </form>
+            </div>
+            <div class="pin">
+                <div class="holder">
+                    <div class="actions" pin_id="8">
+                        <a href="#" class="button">Pin</a>
+                        <a href="#" class="button">Like</a>
+                        <a href="#" class="button comment_tr">Comment</a>
+                    </div>
+                    <a class="image ajax" href="#" title="Pixie">
+                        <img alt="Photo number 4" src="photos/pic8.jpg">
+                    </a>
+                </div>
+                <p class="desc">Will-o-wisp</p>
+                <p class="info">
+                    <span>79 likes</span>
+                    <span>22 repins</span>
+                </p>
+                <form class="comment" method="post" action="" style="display: none">
+                    <input type="hidden" name="id" value="4" />
+                    <textarea placeholder="Add a comment..." maxlength="1000"></textarea>
+                    <button type="button" class="button">Comment</button>
+                </form>
+            </div>
+            <div class="pin">
+                <div class="holder">
+                    <div class="actions" pin_id="9">
+                        <a href="#" class="button">Pin</a>
+                        <a href="#" class="button">Like</a>
+                        <a href="#" class="button comment_tr">Comment</a>
+                    </div>
+                    <a class="image ajax" href="#" title="Ambiance">
+                        <img alt="Photo number 4" src="photos/pic9.jpg">
+                    </a>
+                </div>
+                <p class="desc">Ambiance</p>
+                <p class="info">
+                    <span>105 likes</span>
+                    <span>66 repins</span>
+                </p>
+                <form class="comment" method="post" action="" style="display: none">
+                    <input type="hidden" name="id" value="4" />
+                    <textarea placeholder="Add a comment..." maxlength="1000"></textarea>
+                    <button type="button" class="button">Comment</button>
+                </form>
+            </div>
+            <div class="pin">
+                <div class="holder">
+                    <div class="actions" pin_id="10">
+                        <a href="#" class="button">Pin</a>
+                        <a href="#" class="button">Like</a>
+                        <a href="#" class="button comment_tr">Comment</a>
+                    </div>
+                    <a class="image ajax" href="#" title="Azkaban Escapee">
+                        <img alt="Photo number 4" src="photos/pic10.jpg">
+                    </a>
+                </div>
+                <p class="desc">Witch of the East</p>
+                <p class="info">
+                    <span>450 likes</span>
+                    <span>95 repins</span>
+                </p>
+                <form class="comment" method="post" action="" style="display: none">
+                    <input type="hidden" name="id" value="4" />
+                    <textarea placeholder="Add a comment..." maxlength="1000"></textarea>
+                    <button type="button" class="button">Comment</button>
+                </form>
+            </div>
+            <div class="pin">
+                <div class="holder">
+                    <div class="actions" pin_id="11">
+                        <a href="#" class="button">Pin</a>
+                        <a href="#" class="button">Like</a>
+                        <a href="#" class="button comment_tr">Comment</a>
+                    </div>
+                    <a class="image ajax" href="#" title="Krishna">
+                        <img alt="Photo number 4" src="photos/pic11.jpg">
+                    </a>
+                </div>
+                <p class="desc">Lord Krishna</p>
+                <p class="info">
+                    <span>66 likes</span>
+                    <span>6 repins</span>
+                </p>
+                <form class="comment" method="post" action="" style="display: none">
+                    <input type="hidden" name="id" value="4" />
+                    <textarea placeholder="Add a comment..." maxlength="1000"></textarea>
+                    <button type="button" class="button">Comment</button>
+                </form>
+            </div>
+            <div class="pin">
+                <div class="holder">
+                    <div class="actions" pin_id="12">
+                        <a href="#" class="button">Pin</a>
+                        <a href="#" class="button">Like</a>
+                        <a href="#" class="button comment_tr">Comment</a>
+                    </div>
+                    <a class="image ajax" href="#" title="Assasin">
+                        <img alt="Photo number 4" src="photos/pic12.jpg">
+                    </a>
+                </div>
+                <p class="desc">Assasin</p>
+                <p class="info">
+                    <span>90 likes</span>
+                    <span>58 repins</span>
+                </p>
+                <form class="comment" method="post" action="" style="display: none">
+                    <input type="hidden" name="id" value="4" />
+                    <textarea placeholder="Add a comment..." maxlength="1000"></textarea>
+                    <button type="button" class="button">Comment</button>
+                </form>
+            </div>
+            <div class="pin">
+                <div class="holder">
+                    <div class="actions" pin_id="13">
+                        <a href="#" class="button">Pin</a>
+                        <a href="#" class="button">Like</a>
+                        <a href="#" class="button comment_tr">Comment</a>
+                    </div>
+                    <a class="image ajax" href="#" title="Photo number 4">
+                        <img alt="Photo number 4" src="photos/pic13.jpg">
+                    </a>
+                </div>
+                <p class="desc">Phoenix Fire</p>
+                <p class="info">
+                    <span>5 likes</span>
+                    <span>5 repins</span>
+                </p>
+                <form class="comment" method="post" action="" style="display: none">
+                    <input type="hidden" name="id" value="4" />
+                    <textarea placeholder="Add a comment..." maxlength="1000"></textarea>
+                    <button type="button" class="button">Comment</button>
+                </form>
+            </div>
+            <div class="pin">
+                <div class="holder">
+                    <div class="actions" pin_id="14">
+                        <a href="#" class="button">Pin</a>
+                        <a href="#" class="button">Like</a>
+                        <a href="#" class="button comment_tr">Comment</a>
+                    </div>
+                    <a class="image ajax" href="#" title="Photo number 4">
+                        <img alt="Photo number 4" src="photos/pic14.jpg">
+                    </a>
+                </div>
+                <p class="desc">Shadow hunter</p>
+                <p class="info">
+                    <span>5 likes</span>
+                    <span>5 repins</span>
+                </p>
+                <form class="comment" method="post" action="" style="display: none">
+                    <input type="hidden" name="id" value="4" />
+                    <textarea placeholder="Add a comment..." maxlength="1000"></textarea>
+                    <button type="button" class="button">Comment</button>
+                </form>
+            </div>
+
+        </div>
+    </body>
+</html>
